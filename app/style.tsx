@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import '../public/fonts/druk-wide-bold-cufonfonts-webfont/style.css';
 
 export const HomePageContainer = styled.div`
     width: 100%;
@@ -17,8 +18,8 @@ export const AnnaPresentationArea = styled.div`
 `
 
 export const PresentationText = styled.p`
+    font-family: 'Druk Wide Bold Bold';
     font-size: 40px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin: 0px;
@@ -29,8 +30,8 @@ export const PresentationText = styled.p`
 `
 
 export const HiPresentationText = styled.p`
+    font-family: 'Druk Wide Bold Bold';
     font-size: 60px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin: 0px;
@@ -41,8 +42,8 @@ export const HiPresentationText = styled.p`
 `
 
 export const AnnaName = styled.p`
+    font-family: 'Druk Wide Bold Bold';
     font-size: 120px;
-    font-style: normal;
     font-weight: 700;
     line-height: normal;
     margin: 0px;

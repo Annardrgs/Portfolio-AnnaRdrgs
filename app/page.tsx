@@ -2,6 +2,7 @@
 import * as React from "react";
 import SideNav from "../components/SideNav/SideNav"
 import Footer from "../components/Footer/Footer"
+
 import { 
   HomePageContainer,
   AnnaPresentationArea,
