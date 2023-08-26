@@ -9,6 +9,7 @@ export const AnaSignatureDiv = styled.div`
 `
 
 export const AnaSignature = styled.img`
+    opacity: 0.1;
     margin-left: 50px;
     margin-right: 50px;
     cursor: pointer;

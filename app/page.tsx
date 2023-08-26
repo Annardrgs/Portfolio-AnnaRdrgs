@@ -21,7 +21,7 @@ export default function Home() {
           <PresentationText>Junior Software Developer</PresentationText>
         </AnnaPresentationArea>
         <Footer/>
-        {/* <SideNav></SideNav> */}
+        <SideNav></SideNav>
       </HomePageContainer>
     </>
   )
