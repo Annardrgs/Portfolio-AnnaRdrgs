@@ -1,28 +1,22 @@
 "use client";
-import * as React from "react";
-import SideNav from "../components/SideNav/SideNav"
-import Footer from "../components/Footer/Footer"
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import HomePage from '../pages/HomePage/HomePage';
+import AboutPage from '@/pages/AboutPage/AboutPage';
+// import AboutPage from '../pages/AboutPage/AboutPage';
+// import WorkPage from '../pages/WorkPage/WorkPage';
+// import ExperiencePage from '../pages/ExperiencePage/ExperiencePage';
+// import ContactPage from '../pages/ContactPage/ContactPage';
 
-import { 
-  HomePageContainer,
-  AnnaPresentationArea,
-  HiPresentationText,
-  AnnaName,
-  PresentationText,
-} from "./style"
-
-export default function Home() {
+export default function App() {
   return (
-    <>
-      <HomePageContainer>
-        <AnnaPresentationArea>
-          <HiPresentationText>Hi, I’m</HiPresentationText>
-          <AnnaName>Anna Clara Rodrigues</AnnaName>
-          <PresentationText>Junior Software Developer</PresentationText>
-        </AnnaPresentationArea>
-        <Footer/>
-        <SideNav></SideNav>
-      </HomePageContainer>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path='/' element={<HomePage/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
+        {/* <Route path="/work" component={WorkPage} />
+        <Route path="/experience" component={ExperiencePage} />
+        <Route path="/contact" component={ContactPage} /> */}
+      </Routes>
+    </Router>
+  );
 }

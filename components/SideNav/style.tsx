@@ -11,30 +11,14 @@ export const SideNavDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-left: 2px solid #040910
 `
 
-
-export const Home = styled.div`
-`
-
-export const About = styled.div`
-`
-
-export const Work = styled.div`
-`
-
-export const Experience = styled.div`
-`
-
-export const Contact = styled.div`
-
-`
 export const MenuTitle = styled.p`
     font-family: 'Akzidenz Grotesk Pro Light';
-    font-size: 20px;
+    font-size: 25px;
     color: #040910;
     writing-mode: vertical-lr;
     transform: rotate(360deg);
     margin: 0;
 `
-

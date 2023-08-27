@@ -6,7 +6,7 @@ const Footer = () => {
     return(
         <AnaSignatureDiv>
             <Link href={"https://www.linkedin.com/in/anaclaracurty/"} target="_blank">
-                <AnaSignature src="AnaSignature.svg" alt="Assinatura de Ana"/>
+                <AnaSignature src="AnaWhiteSignature.svg" alt="Ana Signature"/>
             </Link>
         </AnaSignatureDiv>
     )
