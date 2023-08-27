@@ -1,3 +1,7 @@
 .SideNavDiv .active {
     border-bottom: 2px solid red;
 }
+
+.WIPBackground{
+    background-image: url(./WorkInProgressPNG.png);
+}

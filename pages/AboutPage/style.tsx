@@ -78,7 +78,6 @@ export const AnnaIlustrationDiv = styled.div`
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    z-index: 1;
     
     @media screen and (min-width: 768px) {
         position: relative;
