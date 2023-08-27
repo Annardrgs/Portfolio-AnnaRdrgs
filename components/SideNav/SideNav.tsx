@@ -1,34 +1,34 @@
-import * as React from "react";
-import { 
-    SideNavDiv,
-    Home,
-    About,
-    Work,
-    Experience,
-    Contact,
-    MenuTitle
-} from './style'
+import * as React from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { SideNavDiv, MenuTitle } from './style';
 
 const SideNav = () => {
-    return(
+    const location = useLocation();
+    const [activePage, setActivePage] = React.useState(location.pathname);
+
+    React.useEffect(() => {
+        setActivePage(location.pathname);
+    }, [location.pathname]);
+
+    return (
         <SideNavDiv>
-            <Home>
+            <Link to="/" className={activePage === '/' ? 'active' : ''}>
                 <MenuTitle>Home</MenuTitle>
-            </Home>
-            <About>
+            </Link>
+            <Link to="/about" className={activePage === '/about' ? 'active' : ''}>
                 <MenuTitle>About</MenuTitle>
-            </About>
-            <Work>
+            </Link>
+            <Link to="/work" className={activePage === '/work' ? 'active' : ''}>
                 <MenuTitle>Work</MenuTitle>
-            </Work>
-            <Experience>
+            </Link>
+            <Link to="/experience" className={activePage === '/experience' ? 'active' : ''}>
                 <MenuTitle>Experience</MenuTitle>
-            </Experience>
-            <Contact>
+            </Link>
+            <Link to="/contact" className={activePage === '/contact' ? 'active' : ''}>
                 <MenuTitle>Contact</MenuTitle>
-            </Contact>
+            </Link>
         </SideNavDiv>
-    )
-}
+    );
+};
 
 export default SideNav;
